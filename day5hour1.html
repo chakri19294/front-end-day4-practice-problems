@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>week day</title>
+        <script>
+            function weekday()
+            {
+                var r = document.getElementById("num").value;
+                var rem=r%7;
+                switch (rem){
+                    case 0:
+                        document.write("sunday");
+                        break;
+                    case 1:
+                        document.write("monday");
+                        break;
+                    case 2:
+                        document.write("tuesay");
+                        break;
+                    case 3:
+                        document.write("wednesday");
+                        break;
+                    case 4:
+                        document.write("thursday");
+                        break;
+                    case 5:
+                        document.write("friday");
+                        break;
+                    case 6:
+                        document.write("saturday");
+                        break;
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number" id="num" placeholder="enter day number of week" /><br>
+        <input type="button" value="submit" onclick="weekday()"/>
+
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+    function evenornot(){
+        console.log("in function");
+        var r = document.getElementById("n").value;
+        if(r%2===0){
+            console.log("even");
+        }
+        else
+        {
+            console.log("odd");
+        }
+        console.log(area);
+    }
+</script>
+</head>
+<body>
+<form>
+    <input type="number" id="n" placeholder="enter the number" />
+    <input type="button" value="submit" onclick="evenornot()"/>
+</form>
+</body>
+</html>

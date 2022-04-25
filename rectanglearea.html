@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+    function calculateArea(){
+        console.log("in function");
+        var h = document.getElementById("height").value;
+        var w = document.getElementById("width").value;
+        var area = h * w;
+        console.log(area);
+    }
+</script>
+</head>
+<body>
+<form>
+    <input type="number" id="height" placeholder="enter the height" />
+    <input type="number" id="width" placeholder="enter the width" />
+    <input type="button" value="submit" onclick="calculateArea()"/>
+</form>
+</body>
+</html>
